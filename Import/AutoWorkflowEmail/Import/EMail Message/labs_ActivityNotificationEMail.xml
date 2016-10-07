@@ -10,6 +10,6 @@
   <query_string>&lt;Item type="Activity" id="${Item/ActivityId}" action="get"/&gt;
 &lt;Item type="${Item/@type}" id="${Item/@id}" action="get"/&gt;</query_string>
   <subject>Activity: ${Item[@type="Activity"]/name}</subject>
-  <name>Activity Notification EMail</name>
+  <name>labs_ActivityNotificationEMail</name>
  </Item>
 </AML>

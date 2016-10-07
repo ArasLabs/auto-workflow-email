@@ -17,7 +17,7 @@
   <transition_line_color>       </transition_line_color>
   <transition_name_color>       </transition_name_color>
   <transition_name_font></transition_name_font>
-  <name>Workflow EMail Example</name>
+  <name>labs_WorkflowEMailExample</name>
   <Relationships>
    <Item type="Workflow Map Activity" action="add">
     <related_id keyed_name="Start" type="Activity Template">
@@ -55,7 +55,7 @@
      </Item>
     </related_id>
     <sort_order>128</sort_order>
-    <source_id keyed_name="Workflow EMail Example" type="Workflow Map">B2432BCDB63848A2AD3F3C97457F0E20</source_id>
+    <source_id keyed_name="labs_WorkflowEMailExample" type="Workflow Map">B2432BCDB63848A2AD3F3C97457F0E20</source_id>
    </Item>
    <Item type="Workflow Map Activity" action="add">
     <related_id keyed_name="End" type="Activity Template">
@@ -81,7 +81,7 @@
      </Item>
     </related_id>
     <sort_order>128</sort_order>
-    <source_id keyed_name="Workflow EMail Example" type="Workflow Map">B2432BCDB63848A2AD3F3C97457F0E20</source_id>
+    <source_id keyed_name="labs_WorkflowEMailExample" type="Workflow Map">B2432BCDB63848A2AD3F3C97457F0E20</source_id>
    </Item>
    <Item type="Workflow Map Activity" action="add">
     <related_id keyed_name="Do Something" type="Activity Template">
@@ -119,14 +119,14 @@
        </Item>
        <Item type="Activity Template EMail" id="B7CCF9FA2FBF4065A99AF6C9F553D7AF" action="add">
         <event>on_activate</event>
-        <related_id keyed_name="Activity Notification EMail" type="EMail Message">142FC001DE3E4B389482694C203A9E35</related_id>
+        <related_id keyed_name="labs_ActivityNotificationEMail" type="EMail Message">142FC001DE3E4B389482694C203A9E35</related_id>
         <sort_order>256</sort_order>
         <source_id keyed_name="Do Something" type="Activity Template">B55E6E3FAAC841F38B018DDBEE4F852A</source_id>
         <target>all_assignments</target>
        </Item>
        <Item type="Activity Template EMail" id="8CA5F8F7B8B240039115A0F25C367087" action="add">
         <event>on_activate</event>
-        <related_id keyed_name="Simple Activity Notification EMail" type="EMail Message">967274D7B47241B9A54988275D4DBB68</related_id>
+        <related_id keyed_name="labs_SimpleActivityNotificationEMail" type="EMail Message">967274D7B47241B9A54988275D4DBB68</related_id>
         <sort_order>384</sort_order>
         <source_id keyed_name="Do Something" type="Activity Template">B55E6E3FAAC841F38B018DDBEE4F852A</source_id>
         <target>all_assignments</target>
@@ -144,7 +144,7 @@
      </Item>
     </related_id>
     <sort_order>256</sort_order>
-    <source_id keyed_name="Workflow EMail Example" type="Workflow Map">B2432BCDB63848A2AD3F3C97457F0E20</source_id>
+    <source_id keyed_name="labs_WorkflowEMailExample" type="Workflow Map">B2432BCDB63848A2AD3F3C97457F0E20</source_id>
    </Item>
   </Relationships>
  </Item>

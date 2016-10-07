@@ -5,6 +5,6 @@
 &lt;BODY&gt;&amp;nbsp; You have been assigned an activity for the following item: ${Item/item_number}&lt;/BODY&gt;</body_html>
   <from_user keyed_name="Innovator Admin" type="User">30B991F927274FA3829655F50C99472E</from_user>
   <subject>You have been assigned a workflow activity</subject>
-  <name>Simple Activity Notification EMail</name>
+  <name>labs_SimpleActivityNotificationEMail</name>
  </Item>
 </AML>
