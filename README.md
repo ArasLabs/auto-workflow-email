@@ -1,12 +1,9 @@
 # Automatic Workflow Branching
 
-The Automatic Workflow Branching project demonstrates automatic workflow branching based on a property of the controlled item.
+The Automatic Workflow Branching project demonstrates automatic workflow email notifications.
 
 #### How it works
-A method is attached to an automatic activity as an OnActivate server event.  When the workflow
-is started, the automatic activity is activated and the method finds the controlled item.  It
-then reads the Plant property, finds the corresponding path and sets that path to be the default.  
-The activity then closes and the default path is followed.
+Two email items are attached as OnActivate notifications to All Assignments. The simple email uses the string "${Item/item_number}" to show the controlled item's number property in the body of the email. The other email uses a query string to get properties of both the activity and the controlled item.
 
 ## Project Details
 
@@ -24,7 +21,19 @@ The activity then closes and the default path is followed.
 
 1. Aras Innovator installed (version 11.0 SPx preferred)
 2. Aras Package Import tool
-3. AutoWorkflowBranching import package
+3. AutoWorkflowEmail import package
+4. The Innovator Admin user's email is set to your email address.
+5. Aras is configured to send emails, meaning one of the following scenarios:
+  * The mail server is configured in `InnovatorServerConfig.xml`:
+  ```xml
+  <Mail SMTPServer="[SMTP Server IP]"/>
+  ```
+  * Email debugging is enabled in `InnovatorServerConfig.xml`:
+  ```xml
+  <operating_parameter key="email_debug_option" value="file"/>
+  ```
+
+> Note: If email debugging is enabled in InnovatorServerConfig.xml, all emails will be saved as files in the temp folder (Innovator\Server\temp by default). No emails will be sent to the user's actual email address.
 
 ### Install Steps
 
@@ -34,25 +43,24 @@ The activity then closes and the default path is followed.
   * _Note: You must login as root for the package import to succeed!_
 4. Enter the package name in the TargetRelease field.
   * Optional: Enter a description in the Description field.
-5. Enter the path to your local `..\AutoWorkflowBranching\Import\imports.mf` file in the Manifest File field.
-6. Select **aras.labs.WorkflowAutomationExamples** and **aras.labs.AutoWorkflowBranching** in the Available for Import field.
+5. Enter the path to your local `..\AutoWorkflowEmail\Import\imports.mf` file in the Manifest File field.
+6. Select **aras.labs.WorkflowAutomationExamples** and **aras.labs.AutoWorkflowEmail** in the Available for Import field.
 7. Select Type = **Merge** and Mode = **Thorough Mode**.
 8. Click **Import** in the top left corner.
 9. Close the Aras Package Import tool.
 
-You are now ready to login to Aras and try out Automatic Workflow Branching.
+You are now ready to login to Aras and try out Automatic Workflow Email notifications.
 
 ## Usage
 
 1. Log in to Aras as admin.
 2. Navigate to **Workflow Examples** in the table of contents (TOC).
-3. Create a new Workflow Assignment Example item.
-4. Set the Plant property to any of the listed values.
-5. Click **Save/Unlock/Close**.
-6. Navigate to **My Innovator > My Inbasket** in the TOC.
-7. Search for the newly created assignment. The assignment activity should correspond to the chosen Plant on the Workflow Branching Example form.
+3. Create a new Workflow Email Example item.
+4. Click **Save/Unlock/Close**.
+5. Navigate to **My Innovator > My Inbasket** in the TOC.
+6. Search for the newly created assignment.
 
-To review the dynamically created assignment and the paths of the workflow process item, open the Work Item from the assignment. On the item form, select **Views > Workflow** from the main menu to view the workflow process.
+If you configured the SMTP server for your Aras instance, you can check your inbox to confirm whether the notification email was sent. If you enabled email debugging instead, check the temp folder. Any email notifications created by Aras will be saved as in the temp folder as text files.
 
 ## Contributing
 
