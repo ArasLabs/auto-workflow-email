@@ -1,3 +1,4 @@
 <imports>
-  <package name="Workflow Automation Examples" path="Workflow Automation Examples\Import" />
+  <package name="aras.labs.WorkflowAutomationExamples" path="WorkflowAutomationExamples\Import" />
+  <package name="aras.labs.AutoWorkflowEmail" path="AutoWorkflowEmail\Import" />
 </imports>
