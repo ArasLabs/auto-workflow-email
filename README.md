@@ -1,6 +1,6 @@
-# Automatic Workflow Branching
+# Automatic Workflow Emails
 
-The Automatic Workflow Branching project demonstrates automatic workflow email notifications.
+The Automatic Workflow Email project demonstrates automatic workflow email notifications.
 
 #### How it works
 Two email items are attached as OnActivate notifications to All Assignments. The simple email uses the string "${Item/item_number}" to show the controlled item's number property in the body of the email. The other email uses a query string to get properties of both the activity and the controlled item.
