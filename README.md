@@ -5,12 +5,19 @@ The Automatic Workflow Email project demonstrates automatic workflow email notif
 #### How it works
 Two email items are attached as OnActivate notifications to All Assignments. The simple email uses the string "${Item/item_number}" to show the controlled item's number property in the body of the email. The other email uses a query string to get properties of both the activity and the controlled item.
 
-## Project Details
+## History
 
-**Built Using:** Aras 11.0 SP7
-**Browsers Tested:** Internet Explorer 11, Firefox 38 ESR, Chrome
+Release | Notes
+--------|--------
+[v1.0.1](https://github.com/ArasLabs/auto-workflow-branching/releases/tag/v1.0.1) | Tested 11.0 SP12, SP15. Tested on Edge, Firefox 60 ESR, Chrome.
+[v1.0.0](https://github.com/ArasLabs/auto-workflow-branching/releases/tag/v1.0.0) | First release. Tested on Internet Explorer 11, Firefox 38 ESR, Chrome. Though built and tested using Aras 11.0 SP7, this project should function in older releases of Aras 11.0 and Aras 10.0.
 
-> Though built and tested using Aras 11.0 SP7, this project should function in older releases of Aras 11.0 and Aras 10.0.
+#### Supported Aras Versions
+
+Project | Aras
+--------|------
+[v1.0.1](https://github.com/ArasLabs/auto-workflow-branching/releases/tag/v1.0.1) | 10.0 SPx, 11.0 SP7+, 11.0 SP12+, 11.0 SP15
+[v1.0.0](https://github.com/ArasLabs/auto-workflow-branching/releases/tag/v1.0.0) | 10.0 SPx, 11.0 SP7; Old Community Board Migration
 
 ## Installation
 
