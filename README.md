@@ -9,6 +9,7 @@ Two email items are attached as OnActivate notifications to All Assignments. The
 
 Release | Notes
 --------|--------
+[v1.1.1](https://github.com/ArasLabs/auto-workflow-branching/releases/tag/v1.1.1) | Updated Usage for v12                                        
 [v1.1.0](https://github.com/ArasLabs/auto-workflow-branching/releases/tag/v1.1.0) | Updated Tags for TOC List 
 [v1.0.1](https://github.com/ArasLabs/auto-workflow-branching/releases/tag/v1.0.1) | Tested 11.0 SP12, SP15. Tested on Edge, Firefox 60 ESR, Chrome.
 [v1.0.0](https://github.com/ArasLabs/auto-workflow-branching/releases/tag/v1.0.0) | First release. Tested on Internet Explorer 11, Firefox 38 ESR, Chrome. Though built and tested using Aras 11.0 SP7, this project should function in older releases of Aras 11.0 and Aras 10.0.
@@ -17,6 +18,7 @@ Release | Notes
 
 Project | Aras
 --------|------
+[v1.1.1](https://github.com/ArasLabs/auto-workflow-branching/releases/tag/v1.1.1) | 10.0+, 11.0+, 12.0+ 
 [v1.1.0](https://github.com/ArasLabs/auto-workflow-branching/releases/tag/v1.1.0) | 10.0+, 11.0+ 
 [v1.0.1](https://github.com/ArasLabs/auto-workflow-branching/releases/tag/v1.0.1) | 10.0 SPx, 11.0 SP7+, 11.0 SP12+, 11.0 SP15
 [v1.0.0](https://github.com/ArasLabs/auto-workflow-branching/releases/tag/v1.0.0) | 10.0 SPx, 11.0 SP7; Old Community Board Migration
@@ -28,7 +30,7 @@ Project | Aras
 
 ### Pre-requisites
 
-1. Aras Innovator installed (version 11.0 SPx preferred)
+1. Aras Innovator installed (current released version preferred)
 2. Aras Package Import tool
 3. AutoWorkflowEmail import package
 4. The Innovator Admin user's email is set to your email address.
@@ -65,7 +67,7 @@ You are now ready to login to Aras and try out Automatic Workflow Email notifica
 1. Log in to Aras as admin.
 2. Navigate to **Workflow Examples** in the table of contents (TOC).
 3. Create a new Workflow Email Example item.
-4. Click **Save/Unlock/Close**.
+4. Click **Done.**  (**Save/Unlock/Close** v11)
 5. Navigate to **My Innovator > My Inbasket** in the TOC.
 6. Search for the newly created assignment.
 
